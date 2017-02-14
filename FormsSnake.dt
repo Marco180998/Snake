@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT7M43.3273687S" SolutionTotalViewTime="PT8M33.788209S" SolutionTotalDebugTime="PT1M41.2834149S">
+  <FileVersion>
+    <Major>1</Major>
+    <Minor>0</Minor>
+  </FileVersion>
+  <SessionTimeList />
+  <LastSessionTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M41.2848929S" EditActiveTime="PT0S">
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-02-14T20:23:38.3619788+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.2803204S" EditActiveTime="PT13.3967683S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Direction.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:57.138983+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:33:32.4634692+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M52.0293354S" EditActiveTime="PT2M41.9491417S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSnake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:35:27.8586206+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:43:33.8408139+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.0335296S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.Designer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6478644+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.0105609S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.resx</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6598961+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M38.3921775S" EditActiveTime="PT4M41.1849574S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Snake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:21:37.4128018+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:41:05.9288521+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16.8005062S" EditActiveTime="PT6.7965013S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\SnakeSegment.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:44.798325+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:34:30.9654117+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+  </LastSessionTimeList>
+  <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M41.2848929S" EditActiveTime="PT0S">
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-02-14T20:23:38.3619788+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.2803204S" EditActiveTime="PT13.3967683S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Direction.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:57.138983+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:33:32.4634692+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M51.9867229S" EditActiveTime="PT2M41.9491417S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSnake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:35:27.8586206+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:43:33.8408139+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.0335296S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.Designer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6478644+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.0105609S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.resx</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6598961+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M38.3921775S" EditActiveTime="PT4M41.1849574S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Snake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:21:37.4128018+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:41:05.9288521+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16.8005062S" EditActiveTime="PT6.7965013S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\SnakeSegment.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:44.798325+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:34:30.9654117+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+  </TotalTimeList>
+  <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT0.0105609S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.resx</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6598961+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.0335296S" EditActiveTime="PT0S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSNake.Designer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:36:01.6478644+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M51.987224S" EditActiveTime="PT2M41.9491417S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\FrmSnake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:35:27.8586206+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:43:33.8408139+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.2803204S" EditActiveTime="PT13.3967683S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Direction.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:57.138983+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:33:32.4634692+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16.8005062S" EditActiveTime="PT6.7965013S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\SnakeSegment.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:32:44.798325+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:34:30.9654117+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M41.2848929S" EditActiveTime="PT0S">
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-02-14T20:23:38.3619788+01:00</CreatedDate>
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M38.3921775S" EditActiveTime="PT4M41.1849574S">
+      <Item>D:\Documents\GitHub\Snake\FormsSnake\Snake.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Documents\GitHub\Snake\FormsSnake\FormsSnake.csproj</ProjectName>
+      <CreatedDate>2017-02-14T20:21:37.4128018+01:00</CreatedDate>
+      <ModifiedDate>2017-02-14T20:41:05.9288521+01:00</ModifiedDate>
+      <ModifiedBy>marco</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <ViewedBy>marco</ViewedBy>
+    </DevTrackerDataItem>
+  </HistoryTimeList>
+</DevTrackerData>

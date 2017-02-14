@@ -32,5 +32,37 @@ namespace FormsSnake
             snake.NeuesSegment();
             snake.Draw();
         }
+
+        private void SnakeTimer_Tick(object sender, EventArgs e)
+        {
+            snake.Richtung = Direction.Down;
+            snake.Move();
+            snake.Draw();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SnakeTimer.Enabled = !SnakeTimer.Enabled;
+        }
+
+        private void PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            {
+                snake.Richtung = Direction.Down;
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                snake.Richtung = Direction.Up;
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                snake.Richtung = Direction.Left;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                snake.Richtung = Direction.Right;
+            }
+        }
     }
 }

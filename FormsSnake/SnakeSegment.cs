@@ -11,6 +11,8 @@ namespace FormsSnake
         public int X { get; set; }
         public int Y { get; set; }
 
+        public Direction Richtung { get; set; }
+
         public SnakeSegment(int x, int y)
         {
             X = x;
