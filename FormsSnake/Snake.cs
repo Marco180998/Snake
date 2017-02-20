@@ -17,24 +17,21 @@ namespace FormsSnake
         private readonly Graphics _g;
         private readonly List<SnakeSegment> _snakeSegmente;
 
-        private readonly int _segmentSize = 25, _snakeSpeed = 25;
+        private readonly int _segmentSize = 25, _snakeSpeed = 25, _gameHeight, _gameWidth;
 
-        public Snake(Graphics g, int x, int y)
+        public Snake(Graphics g, int x, int y, int height, int width)
         {
             _g = g;
+            _gameHeight = height;
+            _gameWidth = width;
 
             _snakeSegmente = new List<SnakeSegment>();
-            _snakeSegmente.Add(new SnakeSegment(x, y));
-        }
-
-        public void ChangeRichtung(Direction richtung)
-        {
-            Richtung = richtung;
+            _snakeSegmente.Add(new SnakeSegment(x, y, Richtung));
         }
 
         public void NeuesSegment()
         {
-            _snakeSegmente.Add(new SnakeSegment(SchwanzSegment.X + _segmentSize, SchwanzSegment.Y));
+            _snakeSegmente.Add(new SnakeSegment(SchwanzSegment.X + _segmentSize, SchwanzSegment.Y, SchwanzSegment.Richtung));
         }
 
         public void Move()
@@ -59,9 +56,16 @@ namespace FormsSnake
                         break;
                 }
 
+                //if (_snakeSegmente[i].Y > _gameHeight)
+                //    _snakeSegmente[i].Y = 0;
+                //if (_snakeSegmente[i].X > _gameWidth)
+                //    _snakeSegmente[i].X = 0;
+
                 if (i > 0)
                     _snakeSegmente[i].Richtung = _snakeSegmente[i - 1].Richtung;
             }
+            
+            Kopf.Richtung = Richtung;
         }
 
         public void Draw()

@@ -18,5 +18,12 @@ namespace FormsSnake
             X = x;
             Y = y;
         }
+
+        public SnakeSegment(int x, int y, Direction richtung)
+        {
+            X = x;
+            Y = y;
+            Richtung = richtung;
+        }
     }
 }

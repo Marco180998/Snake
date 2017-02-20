@@ -22,9 +22,11 @@ namespace FormsSnake
 
         private void FrmSnake_Load(object sender, EventArgs e)
         {
+            SnakeTimer.Interval = 50;
+
             g = panel1.CreateGraphics();
 
-            snake = new Snake(g, 20, 20);
+            snake = new Snake(g, 20, 20, panel1.Height, panel1.Width);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace FormsSnake
 
         private void SnakeTimer_Tick(object sender, EventArgs e)
         {
-            snake.Richtung = Direction.Down;
+            //snake.Richtung = Direction.Down;
             snake.Move();
             snake.Draw();
         }
