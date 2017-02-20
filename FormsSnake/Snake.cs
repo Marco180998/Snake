@@ -11,16 +11,13 @@ namespace FormsSnake
     {
         public Direction Richtung { get; set; }
 
-        public int KopfX => _snakeSegmente[0].X;
-        public int KopfY => _snakeSegmente[0].Y;
-
-        public int SchwanzX => _snakeSegmente.Last().X;
-        public int SchwanzY => _snakeSegmente.Last().Y;
+        public SnakeSegment Kopf => _snakeSegmente[0];
+        public SnakeSegment SchwanzSegment => _snakeSegmente.Last();
 
         private readonly Graphics _g;
         private readonly List<SnakeSegment> _snakeSegmente;
 
-        private readonly int _segmentSize = 25, _snakeSpeed = 15;
+        private readonly int _segmentSize = 25, _snakeSpeed = 25;
 
         public Snake(Graphics g, int x, int y)
         {
@@ -37,11 +34,13 @@ namespace FormsSnake
 
         public void NeuesSegment()
         {
-            _snakeSegmente.Add(new SnakeSegment(SchwanzX + _segmentSize, SchwanzY));
+            _snakeSegmente.Add(new SnakeSegment(SchwanzSegment.X + _segmentSize, SchwanzSegment.Y));
         }
 
         public void Move()
         {
+            Kopf.Richtung = Richtung;
+
             for (int i = _snakeSegmente.Count - 1; i >= 0; i--)
             {
                 switch (_snakeSegmente[i].Richtung)

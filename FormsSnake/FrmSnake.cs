@@ -45,7 +45,7 @@ namespace FormsSnake
             SnakeTimer.Enabled = !SnakeTimer.Enabled;
         }
 
-        private void PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        private void Form_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyCode == Keys.Down)
             {
