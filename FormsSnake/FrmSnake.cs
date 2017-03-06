@@ -17,6 +17,8 @@ namespace FormsSnake
 
         Game _game;
 
+        bool spieler1, spieler2;
+
         public FrmSnake()
         {
             InitializeComponent();
@@ -25,14 +27,27 @@ namespace FormsSnake
         private void FrmSnake_Load(object sender, EventArgs e)
         {
             SnakeTimer.Interval = 50;
+            DifficultyCb.SelectedIndex = 1;
 
             _game = new Game(pnlSnake);
         }
 
         private void ButtonSpieler1_Clicked(object sender, EventArgs e)
         {
-            _game.Snakes[0].NeuesSegment();
-            _game.Snakes[0].Draw();
+            spieler1 = !spieler1;
+
+            if (spieler1)
+                _game.Snakes[0].Draw();
+
+            //_game.Snakes[0].NeuesSegment();
+        }
+
+        private void btnPlayer2_Click(object sender, EventArgs e)
+        {
+            spieler2 = !spieler2;
+
+            if (spieler2)
+                _game.Snakes[1].Draw();
         }
 
         private void SnakeTimer_Tick(object sender, EventArgs e)
@@ -46,7 +61,27 @@ namespace FormsSnake
 
         private void ButtonTimer_Clicked(object sender, EventArgs e)
         {
+            _game.Restart();
+
+            switch (DifficultyCb.SelectedIndex)
+            {
+                case (0): // leicht
+                    _game.SegmentSize = 15;
+                    break;
+                case 1: // solala
+                    _game.SegmentSize = 10;
+                    break;
+                case 2: // schwer
+                    _game.SegmentSize = 5;
+                    break;
+            }
+
             SnakeTimer.Enabled = !SnakeTimer.Enabled;
+
+            SpeedTb.Enabled = !SnakeTimer.Enabled;
+            BtnPlayer1.Enabled = !SnakeTimer.Enabled;
+            btnPlayer2.Enabled = !SnakeTimer.Enabled;
+            DifficultyCb.Enabled = !SnakeTimer.Enabled;
         }
 
         private void Form_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -85,6 +120,11 @@ namespace FormsSnake
             {
                 _game.Snakes[1].Richtung = Direction.Right;
             }
+        }
+        
+        private void SpeedTb_Scroll(object sender, EventArgs e)
+        {
+            SnakeTimer.Interval = SpeedTb.Value;
         }
     }
 }

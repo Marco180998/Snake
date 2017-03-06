@@ -33,15 +33,15 @@
             this.SnakeTimer = new System.Windows.Forms.Timer(this.components);
             this.BtnPlayer1 = new System.Windows.Forms.Button();
             this.btnPlayer2 = new System.Windows.Forms.Button();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.SpeedTb = new System.Windows.Forms.TrackBar();
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnHighscore = new System.Windows.Forms.Button();
             this.lblSpeed = new System.Windows.Forms.Label();
             this.lblScore1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DifficultyCb = new System.Windows.Forms.ComboBox();
             this.lblSchwierigkeit = new System.Windows.Forms.Label();
             this.lblScore2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSnake
@@ -76,16 +76,23 @@
             this.btnPlayer2.TabIndex = 3;
             this.btnPlayer2.Text = "Spieler 2";
             this.btnPlayer2.UseVisualStyleBackColor = true;
+            this.btnPlayer2.Click += new System.EventHandler(this.btnPlayer2_Click);
             this.btnPlayer2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
-            // trackBar1
+            // SpeedTb
             // 
-            this.trackBar1.Location = new System.Drawing.Point(266, 28);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 3;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.trackBar1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
+            this.SpeedTb.LargeChange = 50;
+            this.SpeedTb.Location = new System.Drawing.Point(266, 28);
+            this.SpeedTb.Maximum = 200;
+            this.SpeedTb.Minimum = 15;
+            this.SpeedTb.Name = "SpeedTb";
+            this.SpeedTb.Size = new System.Drawing.Size(104, 45);
+            this.SpeedTb.TabIndex = 3;
+            this.SpeedTb.TickFrequency = 50;
+            this.SpeedTb.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.SpeedTb.Value = 50;
+            this.SpeedTb.Scroll += new System.EventHandler(this.SpeedTb_Scroll);
+            this.SpeedTb.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
             // btnTimer
             // 
@@ -129,19 +136,19 @@
             this.lblScore1.TabIndex = 8;
             this.lblScore1.Text = "Score: 0";
             // 
-            // comboBox1
+            // DifficultyCb
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.DifficultyCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DifficultyCb.FormattingEnabled = true;
+            this.DifficultyCb.Items.AddRange(new object[] {
             "Leicht",
             "Solala",
             "Schwer"});
-            this.comboBox1.Location = new System.Drawing.Point(457, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(102, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
+            this.DifficultyCb.Location = new System.Drawing.Point(457, 28);
+            this.DifficultyCb.Name = "DifficultyCb";
+            this.DifficultyCb.Size = new System.Drawing.Size(102, 21);
+            this.DifficultyCb.TabIndex = 9;
+            this.DifficultyCb.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
             // lblSchwierigkeit
             // 
@@ -172,12 +179,12 @@
             this.ClientSize = new System.Drawing.Size(755, 495);
             this.Controls.Add(this.lblScore2);
             this.Controls.Add(this.lblSchwierigkeit);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.DifficultyCb);
             this.Controls.Add(this.lblScore1);
             this.Controls.Add(this.lblSpeed);
             this.Controls.Add(this.btnHighscore);
             this.Controls.Add(this.btnTimer);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.SpeedTb);
             this.Controls.Add(this.BtnPlayer1);
             this.Controls.Add(this.btnPlayer2);
             this.Controls.Add(this.pnlSnake);
@@ -185,7 +192,7 @@
             this.Text = "Snake";
             this.Load += new System.EventHandler(this.FrmSnake_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,12 +204,12 @@
         private System.Windows.Forms.Timer SnakeTimer;
         private System.Windows.Forms.Button BtnPlayer1;
         private System.Windows.Forms.Button btnPlayer2;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar SpeedTb;
         private System.Windows.Forms.Button btnTimer;
         private System.Windows.Forms.Button btnHighscore;
         private System.Windows.Forms.Label lblSpeed;
         private System.Windows.Forms.Label lblScore1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox DifficultyCb;
         private System.Windows.Forms.Label lblSchwierigkeit;
         private System.Windows.Forms.Label lblScore2;
     }

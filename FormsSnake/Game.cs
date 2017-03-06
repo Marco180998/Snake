@@ -11,21 +11,36 @@ namespace FormsSnake
     class Game
     {
         public Snake[] Snakes = new Snake[2];
+        public int SegmentSize { get { return Snakes[0].SegmentSize; } set { Snakes[0].SegmentSize = value; Snakes[1].SegmentSize = value; } }
+
         private Food _food;
         private Graphics _g;
-        private int _gameWidth, _gameHeight, _size;
+        private int _gameWidth, _gameHeight;
 
         public Game(Panel panel)
         {
             _g = panel.CreateGraphics();
-            int x = 20, y = 20, size = _size = 10;
 
             _gameWidth = panel.Width;
             _gameHeight = panel.Height;
 
-            Snakes[0] = new Snake(_g, x, y, _gameHeight, _gameWidth, size);
+            //Restart();
+
+            //Snakes[0] = new Snake(_g, Color.White, x, y, _gameHeight, _gameWidth, 10);
+            //Snakes[0].Richtung = Direction.Down;
+            //Snakes[1] = new Snake(_g, Color.Blue, x, y, _gameHeight, _gameWidth, 10);
+            //Snakes[1].Richtung = Direction.Down;
+            
+            //RandomFood();
+        }
+
+        public void Restart()
+        {
+            int x = 20, y = 20;
+
+            Snakes[0] = new Snake(_g, Color.White, x, y, _gameHeight, _gameWidth, 10);
             Snakes[0].Richtung = Direction.Down;
-            Snakes[1] = new Snake(_g, x, y, _gameHeight, _gameWidth, size);
+            Snakes[1] = new Snake(_g, Color.Blue, x * 2, y * 2, _gameHeight, _gameWidth, 10);
             Snakes[1].Richtung = Direction.Down;
 
             RandomFood();
@@ -35,7 +50,9 @@ namespace FormsSnake
         {
             Random rnd = new Random(DateTime.Now.Millisecond);
 
-            _food = new Food(rnd.Next(0, _gameWidth - _size), rnd.Next(0, _gameHeight - _size));
+            int x = rnd.Next(0, _gameWidth - SegmentSize), y = rnd.Next(0, _gameHeight - SegmentSize);
+
+            _food = new Food(x - (x % SegmentSize), y - (y % SegmentSize));
         }
 
         public void Move()
@@ -56,7 +73,7 @@ namespace FormsSnake
         {
             _g.Clear(Color.Black);
 
-            _g.FillRectangle(Brushes.LightBlue, _food.X, _food.Y, _size, _size);
+            _g.FillRectangle(Brushes.LightBlue, _food.X, _food.Y, SegmentSize, SegmentSize);
 
             Snakes[0].Draw();
             Snakes[1].Draw();
