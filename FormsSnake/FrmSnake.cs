@@ -145,6 +145,12 @@ namespace FormsSnake
 
         }
 
+        private void btnHighscore_Click(object sender, EventArgs e)
+        {
+            FormHighscores form = new FormHighscores();
+            form.ShowDialog();
+        }
+
         private void SpeedTb_Scroll(object sender, EventArgs e)
         {
             SnakeTimer.Interval = SpeedTb.Value;

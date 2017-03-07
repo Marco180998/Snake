@@ -16,5 +16,10 @@ namespace FormsSnake
             Score = score;
             Name = name;
         }
+
+        public override string ToString()
+        {
+            return $"{Score}. {Name}";
+        }
     }
 }

@@ -117,6 +117,7 @@
             this.btnHighscore.TabIndex = 6;
             this.btnHighscore.Text = "Highscores";
             this.btnHighscore.UseVisualStyleBackColor = true;
+            this.btnHighscore.Click += new System.EventHandler(this.btnHighscore_Click);
             this.btnHighscore.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
             // lblSpeed
