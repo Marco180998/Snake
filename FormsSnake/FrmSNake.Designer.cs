@@ -134,11 +134,12 @@
             this.lblScore1.AutoSize = true;
             this.lblScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore1.ForeColor = System.Drawing.Color.White;
-            this.lblScore1.Location = new System.Drawing.Point(663, 12);
+            this.lblScore1.Location = new System.Drawing.Point(590, 11);
             this.lblScore1.Name = "lblScore1";
-            this.lblScore1.Size = new System.Drawing.Size(80, 24);
+            this.lblScore1.Size = new System.Drawing.Size(152, 24);
             this.lblScore1.TabIndex = 8;
-            this.lblScore1.Text = "Score: 0";
+            this.lblScore1.Text = "Player 1 Score: 0";
+            this.lblScore1.Click += new System.EventHandler(this.lblScore1_Click);
             // 
             // DifficultyCb
             // 
@@ -169,11 +170,11 @@
             this.lblScore2.AutoSize = true;
             this.lblScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore2.ForeColor = System.Drawing.Color.White;
-            this.lblScore2.Location = new System.Drawing.Point(663, 36);
+            this.lblScore2.Location = new System.Drawing.Point(591, 35);
             this.lblScore2.Name = "lblScore2";
-            this.lblScore2.Size = new System.Drawing.Size(80, 24);
+            this.lblScore2.Size = new System.Drawing.Size(152, 24);
             this.lblScore2.TabIndex = 11;
-            this.lblScore2.Text = "Score: 0";
+            this.lblScore2.Text = "Player 2 Score: 0";
             // 
             // lblPlayer
             // 

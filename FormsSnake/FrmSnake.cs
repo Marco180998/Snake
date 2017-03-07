@@ -140,6 +140,11 @@ namespace FormsSnake
             SnakeTimer.Enabled = !SnakeTimer.Enabled;
         }
 
+        private void lblScore1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void SpeedTb_Scroll(object sender, EventArgs e)
         {
             SnakeTimer.Interval = SpeedTb.Value;
