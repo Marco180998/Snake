@@ -41,11 +41,15 @@
             this.DifficultyCb = new System.Windows.Forms.ComboBox();
             this.lblSchwierigkeit = new System.Windows.Forms.Label();
             this.lblScore2 = new System.Windows.Forms.Label();
+            this.lblPlayer = new System.Windows.Forms.Label();
+            this.tbPlayer = new System.Windows.Forms.TextBox();
+            this.btnPause = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSnake
             // 
+            this.pnlSnake.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSnake.Location = new System.Drawing.Point(12, 79);
             this.pnlSnake.Name = "pnlSnake";
             this.pnlSnake.Size = new System.Drawing.Size(731, 404);
@@ -107,7 +111,7 @@
             // 
             // btnHighscore
             // 
-            this.btnHighscore.Location = new System.Drawing.Point(376, 12);
+            this.btnHighscore.Location = new System.Drawing.Point(12, 41);
             this.btnHighscore.Name = "btnHighscore";
             this.btnHighscore.Size = new System.Drawing.Size(75, 23);
             this.btnHighscore.TabIndex = 6;
@@ -144,7 +148,7 @@
             "Leicht",
             "Solala",
             "Schwer"});
-            this.DifficultyCb.Location = new System.Drawing.Point(457, 28);
+            this.DifficultyCb.Location = new System.Drawing.Point(376, 28);
             this.DifficultyCb.Name = "DifficultyCb";
             this.DifficultyCb.Size = new System.Drawing.Size(102, 21);
             this.DifficultyCb.TabIndex = 9;
@@ -154,7 +158,7 @@
             // 
             this.lblSchwierigkeit.AutoSize = true;
             this.lblSchwierigkeit.ForeColor = System.Drawing.Color.White;
-            this.lblSchwierigkeit.Location = new System.Drawing.Point(473, 12);
+            this.lblSchwierigkeit.Location = new System.Drawing.Point(395, 12);
             this.lblSchwierigkeit.Name = "lblSchwierigkeit";
             this.lblSchwierigkeit.Size = new System.Drawing.Size(70, 13);
             this.lblSchwierigkeit.TabIndex = 10;
@@ -171,12 +175,44 @@
             this.lblScore2.TabIndex = 11;
             this.lblScore2.Text = "Score: 0";
             // 
+            // lblPlayer
+            // 
+            this.lblPlayer.AutoSize = true;
+            this.lblPlayer.ForeColor = System.Drawing.Color.White;
+            this.lblPlayer.Location = new System.Drawing.Point(510, 12);
+            this.lblPlayer.Name = "lblPlayer";
+            this.lblPlayer.Size = new System.Drawing.Size(39, 13);
+            this.lblPlayer.TabIndex = 12;
+            this.lblPlayer.Text = "Spieler";
+            // 
+            // tbPlayer
+            // 
+            this.tbPlayer.Location = new System.Drawing.Point(484, 29);
+            this.tbPlayer.Name = "tbPlayer";
+            this.tbPlayer.Size = new System.Drawing.Size(100, 20);
+            this.tbPlayer.TabIndex = 13;
+            this.tbPlayer.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
+            // 
+            // btnPause
+            // 
+            this.btnPause.Location = new System.Drawing.Point(175, 41);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(85, 23);
+            this.btnPause.TabIndex = 14;
+            this.btnPause.Text = "Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            this.btnPause.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
+            // 
             // FrmSnake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(755, 495);
+            this.Controls.Add(this.btnPause);
+            this.Controls.Add(this.tbPlayer);
+            this.Controls.Add(this.lblPlayer);
             this.Controls.Add(this.lblScore2);
             this.Controls.Add(this.lblSchwierigkeit);
             this.Controls.Add(this.DifficultyCb);
@@ -190,6 +226,7 @@
             this.Controls.Add(this.pnlSnake);
             this.Name = "FrmSnake";
             this.Text = "Snake";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSnake_FormClosing);
             this.Load += new System.EventHandler(this.FrmSnake_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).EndInit();
@@ -212,6 +249,9 @@
         private System.Windows.Forms.ComboBox DifficultyCb;
         private System.Windows.Forms.Label lblSchwierigkeit;
         private System.Windows.Forms.Label lblScore2;
+        private System.Windows.Forms.Label lblPlayer;
+        private System.Windows.Forms.TextBox tbPlayer;
+        private System.Windows.Forms.Button btnPause;
     }
 }
 

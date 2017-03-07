@@ -38,7 +38,7 @@ namespace FormsSnake
             _snakeFarbe = new SolidBrush(color);
         }
 
-        public void NeuesSegment()
+        public void Grow()
         {
             switch (SchwanzSegment.Richtung)
             {
@@ -81,10 +81,10 @@ namespace FormsSnake
                         break;
                 }
 
-                if (_snakeSegmente[i].Y >= _gameHeight || _snakeSegmente[i].Y <= 0)
+                if (_snakeSegmente[i].Y >= _gameHeight - SegmentSize || _snakeSegmente[i].Y <= 0)
                     Tod = true;
 
-                if (_snakeSegmente[i].X >= _gameWidth || _snakeSegmente[i].X <= 0)
+                if (_snakeSegmente[i].X >= _gameWidth - SegmentSize || _snakeSegmente[i].X <= 0)
                     Tod = true;
 
                 if (i > 0)
@@ -119,7 +119,7 @@ namespace FormsSnake
                 (Kopf.Y >= food.Y && Kopf.Y <= food.Y + SegmentSize))
             {
                 food.Eaten = true;
-                NeuesSegment();
+                Grow();
                 Score++;
             }
 

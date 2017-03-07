@@ -26,8 +26,12 @@ namespace FormsSnake
 
         private void FrmSnake_Load(object sender, EventArgs e)
         {
+            Highscores.Load();
+
             SnakeTimer.Interval = 50;
             DifficultyCb.SelectedIndex = 1;
+
+            tbPlayer.Text = Environment.MachineName;
 
             _game = new Game(pnlSnake);
         }
@@ -56,7 +60,10 @@ namespace FormsSnake
             _game.Draw();
 
             lblScore1.Text = $"Score: {_game.Snakes[0].Score}";
+            lblScore1.ForeColor = (_game.Snakes[0].Tod) ? Color.Red : Color.White;
+
             lblScore2.Text = $"Score: {_game.Snakes[1].Score}";
+            lblScore2.ForeColor = (_game.Snakes[1].Tod) ? Color.Red : Color.White;
         }
 
         private void ButtonTimer_Clicked(object sender, EventArgs e)
@@ -79,6 +86,7 @@ namespace FormsSnake
             SnakeTimer.Enabled = !SnakeTimer.Enabled;
 
             SpeedTb.Enabled = !SnakeTimer.Enabled;
+            tbPlayer.Enabled = !SnakeTimer.Enabled;
             BtnPlayer1.Enabled = !SnakeTimer.Enabled;
             btnPlayer2.Enabled = !SnakeTimer.Enabled;
             DifficultyCb.Enabled = !SnakeTimer.Enabled;
@@ -121,7 +129,17 @@ namespace FormsSnake
                 _game.Snakes[1].Richtung = Direction.Right;
             }
         }
-        
+
+        private void FrmSnake_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Highscores.Save();
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            SnakeTimer.Enabled = !SnakeTimer.Enabled;
+        }
+
         private void SpeedTb_Scroll(object sender, EventArgs e)
         {
             SnakeTimer.Interval = SpeedTb.Value;

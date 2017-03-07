@@ -11,7 +11,18 @@ namespace FormsSnake
     class Game
     {
         public Snake[] Snakes = new Snake[2];
-        public int SegmentSize { get { return Snakes[0].SegmentSize; } set { Snakes[0].SegmentSize = value; Snakes[1].SegmentSize = value; } }
+        public int SegmentSize
+        {
+            get
+            {
+                return Snakes[0].SegmentSize;
+            }
+            set
+            {
+                Snakes[0].SegmentSize = value;
+                Snakes[1].SegmentSize = value;
+            }
+        }
 
         private Food _food;
         private Graphics _g;
