@@ -44,15 +44,12 @@
             this.lblPlayer = new System.Windows.Forms.Label();
             this.tbPlayer = new System.Windows.Forms.TextBox();
             this.btnPause = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlSnake.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSnake
             // 
             this.pnlSnake.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSnake.Controls.Add(this.label1);
             this.pnlSnake.Location = new System.Drawing.Point(12, 79);
             this.pnlSnake.Name = "pnlSnake";
             this.pnlSnake.Size = new System.Drawing.Size(731, 404);
@@ -208,16 +205,6 @@
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             this.btnPause.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(363, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "dank memes";
-            // 
             // FrmSnake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,8 +230,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSnake_FormClosing);
             this.Load += new System.EventHandler(this.FrmSnake_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
-            this.pnlSnake.ResumeLayout(false);
-            this.pnlSnake.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,7 +253,6 @@
         private System.Windows.Forms.Label lblPlayer;
         private System.Windows.Forms.TextBox tbPlayer;
         private System.Windows.Forms.Button btnPause;
-        private System.Windows.Forms.Label label1;
     }
 }
 
