@@ -24,5 +24,12 @@ namespace FormsSnake
                 lbHighscores.Items.Add($"{Highscores.Scores[i].Score} {Highscores.Scores[i].Name}");
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lbHighscores.Items.Clear();
+
+            Highscores.Scores.Clear();
+        }
     }
 }

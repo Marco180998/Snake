@@ -89,6 +89,9 @@ namespace FormsSnake
 
                 if (i > 0)
                     _snakeSegmente[i].Richtung = _snakeSegmente[i - 1].Richtung;
+                
+                if (Tod && Score != 0)
+                    Highscores.Check(Score);
 
                 foreach (SnakeSegment seg in _snakeSegmente)
                 {

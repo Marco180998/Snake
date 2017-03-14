@@ -70,6 +70,8 @@ namespace FormsSnake
         {
             _game.Restart();
 
+            Highscores.Username = tbPlayer.Text;
+
             switch (DifficultyCb.SelectedIndex)
             {
                 case (0): // leicht

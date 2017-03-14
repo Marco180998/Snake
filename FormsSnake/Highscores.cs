@@ -9,6 +9,7 @@ namespace FormsSnake
     public static class Highscores
     {
         public static List<Highscore> Scores { get; set; }
+        public static string Username { get; set; }
 
         public static void Load()
         {
@@ -47,7 +48,21 @@ namespace FormsSnake
 
         public static void Check(int score)
         {
-
+            if (Scores.Count == 0)
+            {
+                Scores.Add(new Highscore(score, Username));
+            }
+            else
+            {
+                for (int i = 0; i < Scores.Count; i++)
+                {
+                    if (Scores[i].Score <= score)
+                    {
+                        Scores.Insert(i, new Highscore(score, Username));
+                        break;
+                    }
+                }
+            }
         }
     }
 }

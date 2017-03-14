@@ -85,7 +85,7 @@ namespace FormsSnake
             _g.Clear(Color.Black);
 
             _g.FillRectangle(Brushes.LightBlue, _food.X, _food.Y, SegmentSize, SegmentSize);
-
+            
             Snakes[0].Draw();
             Snakes[1].Draw();
         }
