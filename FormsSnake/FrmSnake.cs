@@ -17,7 +17,7 @@ namespace FormsSnake
 
         Game _game;
 
-        bool spieler1, spieler2;
+        bool spieler1 = true, spieler2 = false;
 
         public FrmSnake()
         {
@@ -34,24 +34,37 @@ namespace FormsSnake
             tbPlayer.Text = Environment.MachineName;
 
             _game = new Game(pnlSnake);
+
+            _game.Snakes[0].Enabled = spieler1;
+            _game.Snakes[1].Enabled = spieler2;
         }
 
         private void ButtonSpieler1_Clicked(object sender, EventArgs e)
         {
             spieler1 = !spieler1;
+            BtnPlayer1.BackColor = (spieler1) ? Color.Lime : Color.Red; // kurze IF abfrage
 
-            if (spieler1)
-                _game.Snakes[0].Draw();
+            if (spieler1 == false && spieler2 == false)
+            {
+                spieler2 = !spieler2;
+                btnPlayer2.BackColor = (spieler2) ? Color.Lime : Color.Red; // kurze IF abfrage
+            }
 
-            //_game.Snakes[0].NeuesSegment();
+            _game.Snakes[0].Enabled = spieler1;
         }
 
         private void btnPlayer2_Click(object sender, EventArgs e)
         {
             spieler2 = !spieler2;
+            btnPlayer2.BackColor = (spieler2) ? Color.Lime : Color.Red; // kurze IF abfrage
+            
+            if (spieler1 == false && spieler2 == false)
+            {
+                spieler1 = !spieler1;
+                BtnPlayer1.BackColor = (spieler1) ? Color.Lime : Color.Red; // kurze IF abfrage
+            }
 
-            if (spieler2)
-                _game.Snakes[1].Draw();
+            _game.Snakes[1].Enabled = spieler2;
         }
 
         private void SnakeTimer_Tick(object sender, EventArgs e)
