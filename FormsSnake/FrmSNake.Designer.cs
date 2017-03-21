@@ -63,23 +63,25 @@
             // 
             // BtnPlayer1
             // 
+            this.BtnPlayer1.BackColor = System.Drawing.Color.Lime;
             this.BtnPlayer1.Location = new System.Drawing.Point(12, 12);
             this.BtnPlayer1.Name = "BtnPlayer1";
             this.BtnPlayer1.Size = new System.Drawing.Size(75, 23);
             this.BtnPlayer1.TabIndex = 0;
             this.BtnPlayer1.Text = "Spieler 1";
-            this.BtnPlayer1.UseVisualStyleBackColor = true;
+            this.BtnPlayer1.UseVisualStyleBackColor = false;
             this.BtnPlayer1.Click += new System.EventHandler(this.ButtonSpieler1_Clicked);
             this.BtnPlayer1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 
             // btnPlayer2
             // 
+            this.btnPlayer2.BackColor = System.Drawing.Color.Red;
             this.btnPlayer2.Location = new System.Drawing.Point(93, 12);
             this.btnPlayer2.Name = "btnPlayer2";
             this.btnPlayer2.Size = new System.Drawing.Size(75, 23);
             this.btnPlayer2.TabIndex = 3;
             this.btnPlayer2.Text = "Spieler 2";
-            this.btnPlayer2.UseVisualStyleBackColor = true;
+            this.btnPlayer2.UseVisualStyleBackColor = false;
             this.btnPlayer2.Click += new System.EventHandler(this.btnPlayer2_Click);
             this.btnPlayer2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form_PreviewKeyDown);
             // 

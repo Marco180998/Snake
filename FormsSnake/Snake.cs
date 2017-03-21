@@ -14,6 +14,7 @@ namespace FormsSnake
         public bool Tod { get; private set; }
         public int Score { get; private set; }
         public int SegmentSize { get; set; }
+        public bool Enabled { get; set; }
 
         public SnakeSegment Kopf => _snakeSegmente[0]; // => get
         public SnakeSegment SchwanzSegment => _snakeSegmente.Last();
@@ -24,7 +25,7 @@ namespace FormsSnake
 
         private readonly int _gameHeight, _gameWidth;
 
-        public Snake(Graphics g, Color color, int x, int y, int gameHeight, int gameWidth, int snakeSize)
+        public Snake(Graphics g, Color color, int x, int y, int gameHeight, int gameWidth, int snakeSize, bool enabled = false)
         {
             _g = g;
             _gameHeight = gameHeight;
@@ -36,6 +37,8 @@ namespace FormsSnake
             _snakeSegmente.Add(new SnakeSegment(x, y, Richtung));
 
             _snakeFarbe = new SolidBrush(color);
+
+            Enabled = enabled;
         }
 
         public void Grow()
